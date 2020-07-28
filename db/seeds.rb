@@ -42,7 +42,7 @@ end
   category_id = r.rand(1..category.count)
   views = r.rand(10000..90000)
   s = Story.new
-  s.story_name = Faker::TvShows::Buffy.episode 
+  s.story_name = Faker::TvShows::Buffy.episode
   s.user_id = ui
   s.author = Faker::Name.name
   s.free = true
@@ -58,7 +58,7 @@ end
   category_id = r.rand(1..category.count)
   views = r.rand(10000..90000)
   s = Story.new
-  s.story_name = Faker::TvShows::Buffy.episode 
+  s.story_name = Faker::TvShows::Buffy.episode
   s.user_id = ui
   s.author = Faker::Name.name
   s.free = false
@@ -75,8 +75,8 @@ Story.all.each do |i|
       c = Chapter.new
       content = ""
       30.times do |j|
-          content += Faker::Quotes::Shakespeare.romeo_and_juliet_quote 
-          content += Faker::Quotes::Shakespeare.king_richard_iii_quote 
+          content += Faker::Quotes::Shakespeare.romeo_and_juliet_quote
+          content += Faker::Quotes::Shakespeare.king_richard_iii_quote
       end
       c.chapter_number = num
       c.chapter_name = Faker::TvShows::Simpsons.location
@@ -95,3 +95,4 @@ end
   c.rating_number = r.rand(1..5)
   c.save
 end
+

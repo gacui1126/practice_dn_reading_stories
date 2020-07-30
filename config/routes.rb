@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
   get "/edit", to: "users#edit"
   resources :users
+
 end

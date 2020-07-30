@@ -24,6 +24,9 @@ module SessionsHelper
 
     def logged_in?
         !current_user.nil?
+
+    def current_user?(user)
+        user && user == current_user
     end
 
     # Forgets a persistent session.

@@ -13,9 +13,8 @@ User.create!(username: "Son kute",
              password_confirmation: "123123",
              role: 1,
              sex: true,
-             admin: true
              )
-10.times do |n|
+49.times do |n|
   name = Faker::Name.name
   email = "user-#{n+1}@railstutorial.org"
   User.create!(username: name,
@@ -38,9 +37,8 @@ end
   sex: true
   )
 end
-
-20.times do |n|
-  ui = r.rand(10..20)
+100.times do |n|
+  ui = r.rand(50..60)
   category_id = r.rand(1..category.count)
   views = r.rand(10000..90000)
   s = Story.new
@@ -56,7 +54,7 @@ end
 end
 
 30.times do |n|
-  ui = r.rand(1..20)
+  ui = r.rand(50..60)
   category_id = r.rand(1..category.count)
   views = r.rand(10000..90000)
   s = Story.new
@@ -101,9 +99,8 @@ end
 
 50.times do |i|
   c = Action.new
-  byebug
-  c.user_id = r.rand(1...User.count)
-  c.story_id = r.rand(1...Story.count)
+  c.user_id = r.rand(1..User.count)
+  c.story_id = r.rand(1..Story.count)
   c.type = 0
   c.rating_number = r.rand(1..5)
   c.save

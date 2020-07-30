@@ -9,4 +9,3 @@ module ApplicationHelper
       Category.all
     end
 end
-

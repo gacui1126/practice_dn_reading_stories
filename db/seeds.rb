@@ -88,6 +88,7 @@ Story.all.each do |i|
 end
 
 50.times do |i|
+
   c = Action.new
   c.user_id = r.rand(1..User.count)
   c.story_id = r.rand(1..Story.count)
@@ -95,4 +96,5 @@ end
   c.rating_number = r.rand(1..5)
   c.save
 end
+
 

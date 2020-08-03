@@ -26,7 +26,6 @@ gem "turbolinks", "~> 5"
 gem "webpacker", "~> 4.0"
 gem "will_paginate"
 
-
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -47,10 +46,6 @@ end
 group :development, :test do
   gem "rubocop", "~> 0.74.0", require: false
   gem "rubocop-rails", "~> 2.3.2", require: false
-end
-
-group :production do
-  gem "pg", "1.1.4"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
